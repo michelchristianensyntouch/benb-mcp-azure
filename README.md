@@ -44,6 +44,9 @@ Enter a namespace for your project, such as `Mcp.Function`.
 
 Choose **Anonymous** to keep the setup simple.
 
+<img width="917" height="170" alt="image" src="https://github.com/user-attachments/assets/6724d165-4e33-4479-9697-6ad91017f079" />
+
+
 ### Step 8: Verify the Basic Setup
 
 To make sure that your basic Azure Function works as expected, type this command in the root of your project:
@@ -52,6 +55,13 @@ To make sure that your basic Azure Function works as expected, type this command
 func start
 ```
 
+This should show you output with a local URL (e.g., `http://localhost:7071/api/HttpMCP`).
+<img width="1090" height="397" alt="image" src="https://github.com/user-attachments/assets/bceb7403-b420-4693-9237-a563bb1d5fd4" />
+
+If you point your browser to the given URL, you will see a welcome message confirming the function is working.
+<img width="723" height="238" alt="image" src="https://github.com/user-attachments/assets/f23f2b10-3273-43c6-9a24-b293721d0e4b" />
+
+Press `CTRL + C` to stop the application.
 ---
 
 ## Part 2: Adding MCP Capabilities
@@ -411,8 +421,3 @@ This foundation enables you to build more sophisticated MCP servers for large-sc
 - [Model Context Protocol Specification](https://modelcontextprotocol.io/)
 - [GitHub Copilot Documentation](https://docs.github.com/copilot)
 
-This should show you output with a local URL (e.g., `http://localhost:7071/api/HttpMCP`).
-
-If you point your browser to the given URL, you will see a welcome message confirming the function is working.
-
-Press `CTRL + C` to stop the application.
