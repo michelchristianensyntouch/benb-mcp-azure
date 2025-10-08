@@ -1,11 +1,11 @@
 ## Part 1: Setting Up Your Azure Functions Project
 
 ### Step 0: Prepare environment
-Download and install Microsoft .NET SDK 9.0.305
-Download and Install VsCode
-Download and install Azure Function Core Tools
-Install Azure Tools Extension
-Open Azure Extension 
+Download and install Microsoft .NET SDK 9.0.305,
+Download and Install VsCode,
+Download and install Azure Function Core Tools,
+Install Azure Tools Extension,
+Open Azure Extension,
 Login into Azure Syntouch-Speeltuin
 
 ### Step 1: Create a New Azure Functions Project
