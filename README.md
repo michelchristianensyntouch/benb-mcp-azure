@@ -328,9 +328,9 @@ Upon successful deployment, note the endpoint URL displayed in your terminal.
 ### Step 19: Get the Azure Function URL
 
 1. Login to the [Azure Portal](https://portal.azure.com)
-2. Search for your resource group: `rg-mcp-func-server`
-3. Click on the function app: `mcp-func-app`
-4. Copy the **Default Domain** (e.g., `mcp-func-app.azurewebsites.net`)
+2. Search for your resource group: `rg-mcp-func-server-<user>`
+3. Click on the function app: `mcp-func-app-<user>`
+4. Copy the **Default Domain** (e.g., `mcp-func-app-mch.azurewebsites.net)
 
 ### Step 20: Update mcp.json with the Remote URL
 
