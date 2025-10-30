@@ -7,6 +7,7 @@ Before starting this tutorial, ensure you have:
 - .NET SDK installed (9.0.305)
 - VsCode installed (download)
 - Azure Functions Core Tools (download)
+- Azure CLI (https://aka.ms/installazurecliwindows) (download and use MSI installer)
 - Azure Tools Extension installed (extension in VsCode)
 - Visual Studio Code with GitHub Copilot
 - Login into Azure Syntouch-Speeltuin
