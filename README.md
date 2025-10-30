@@ -287,6 +287,7 @@ Multiply 100 and 89.
 ---
 
 ## Part 6: Deploying to Azure
+replace <user> with your name
 
 ### Step 14: Login to Azure
 
@@ -297,19 +298,19 @@ az login
 ### Step 15: Create a Resource Group
 
 ```bash
-az group create --name rg-mcpserverssyntouch-mch --location westeurope
+az group create --name rg-mcpserverssyntouch-<user> --location westeurope
 ```
 
 ### Step 16: Create a Storage Account
 
 ```bash
-az storage account create --name mcpstoreacc --resource-group rg-mcp-func-server --location eastus --sku Standard_LRS
+az storage account create --name mcpstoreacc<user> --resource-group rg-mcpserverssyntouch-<user> --location westeurope --sku Standard_LRS
 ```
 
 ### Step 17: Create a Function App
 
 ```bash
-az functionapp create --resource-group rg-mcp-func-server --consumption-plan-location eastus --runtime dotnet-isolated --functions-version 4 --name mcp-func-app --storage-account mcpstoreacc
+az functionapp create --resource-group g-mcpserverssyntouch-<user> --consumption-plan-location westeurope --runtime dotnet-isolated --functions-version 4 --name mcp-func-app --storage-account mcpstoreacc<user>
 ```
 
 ### Step 18: Deploy the Function App
