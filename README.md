@@ -297,7 +297,7 @@ az login
 ### Step 15: Create a Resource Group
 
 ```bash
-az group create --name rg-mcp-func-server --location eastus
+az group create --name rg-mcpserverssyntouch-mch --location westeurope
 ```
 
 ### Step 16: Create a Storage Account
