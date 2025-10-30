@@ -310,13 +310,13 @@ az storage account create --name mcpstoreacc<user> --resource-group rg-mcpserver
 ### Step 17: Create a Function App
 
 ```bash
-az functionapp create --resource-group g-mcpserverssyntouch-<user> --consumption-plan-location westeurope --runtime dotnet-isolated --functions-version 4 --name mcp-func-app-<mch> --storage-account mcpstoreacc<user>
+az functionapp create --resource-group g-mcpserverssyntouch-<user> --consumption-plan-location westeurope --runtime dotnet-isolated --functions-version 4 --name mcp-func-app-<user> --storage-account mcpstoreacc<user>
 ```
 
 ### Step 18: Deploy the Function App
 
 ```bash
-func azure functionapp publish mcp-func-app
+func azure functionapp publish mcp-func-app-<user>
 ```
 
 Upon successful deployment, note the endpoint URL displayed in your terminal.
