@@ -157,7 +157,7 @@ public class ReverseMessageMcpTool {
   public IActionResult Run(
     [McpToolTrigger(ToolDefinitions.ReverseMessageTool.Name, ToolDefinitions.ReverseMessageTool.Description)]
     ToolInvocationContext context,
-    [McpToolProperty(ToolDefinitions.ReverseMessageTool.Param.Name, ToolDefinitions.DataTypes.String, ToolDefinitions.ReverseMessageTool.Param.Description)]
+    [McpToolProperty(ToolDefinitions.ReverseMessageTool.Param.Name, ToolDefinitions.DataTypes.String, true)]
     string message
   ) {
     string reversedMessage = new string(message.ToCharArray().Reverse().ToArray());
@@ -176,9 +176,9 @@ public class MultiplyNumbersMcpTool {
   public IActionResult Run(
     [McpToolTrigger(ToolDefinitions.MultiplyNumbersTool.Name, ToolDefinitions.MultiplyNumbersTool.Description)]
     ToolInvocationContext context,
-    [McpToolProperty(ToolDefinitions.MultiplyNumbersTool.Param1.Name, ToolDefinitions.DataTypes.Number, ToolDefinitions.MultiplyNumbersTool.Param1.Description)]
+    [McpToolProperty(ToolDefinitions.MultiplyNumbersTool.Param1.Name, ToolDefinitions.DataTypes.Number, true)]
     int firstNumber,
-    [McpToolProperty(ToolDefinitions.MultiplyNumbersTool.Param2.Name, ToolDefinitions.DataTypes.Number, ToolDefinitions.MultiplyNumbersTool.Param2.Description)]
+    [McpToolProperty(ToolDefinitions.MultiplyNumbersTool.Param2.Name, ToolDefinitions.DataTypes.Number, true)]
     int secondNumber) {
     return new OkObjectResult($"Hi. I am {ToolDefinitions.MultiplyNumbersTool.Name}!. The result of {firstNumber} multiplied by {secondNumber} is: {firstNumber * secondNumber}");
   }
@@ -194,8 +194,6 @@ public class MultiplyNumbersMcpTool {
 Open `Program.cs` and add the following code **before** the `builder.Build().Run();` line:
 
 ```csharp
-builder.EnableMcpToolMetadata();
-
 builder.ConfigureMcpTool(ToolDefinitions.HelloWorldTool.Name);
 
 builder.ConfigureMcpTool(ToolDefinitions.ReverseMessageTool.Name)
